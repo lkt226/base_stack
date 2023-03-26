@@ -1,0 +1,13 @@
+/* 
+  Informações:
+  Aqui você pode definir todas as animações e transições padrões do site, seja elas de hover, 
+  de classe ou @animation, caso sejam poucas, se forem muitas recomendo separar, e se for especifica
+  fazer no componente.
+*/
+
+/* Hovers do site */
+.default_button:hover {
+
+}
+
+/* Transições de site */

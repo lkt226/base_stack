@@ -1,0 +1,50 @@
+/* 
+  Informações:
+  Aqui é onde defino o container do site, ele vai se alterando conforme o tamanho da tela,
+  e deve ser alterado com o Figma, esse é apenas o arquivo padrão.
+
+  * sobre o "r-container", sinceramente acho que nunca precisei usar, então nunca foi testado,
+  mas acredito que deva funcionar sim 👹, pode ficar a vontade pra testar ele, consertar caso não funcione.
+*/
+
+/* Definição dos tamanhos e calculos */
+:root {
+  --container: 1220px;
+  --m-over: calc((100vw - var(--container)) / 2);
+}
+  
+/* Padronização dos containers do site */
+.container {
+  max-width: var(--container);
+  margin-left: auto;
+  margin-right: auto;
+}
+.l-container {
+  margin-left: var(--m-over);
+}
+.r-container {
+  /* Não testado */
+  max-width: calc(var(--container) + var(--m-over));
+}
+
+/* Queries de responsividade */
+@media screen and (max-width: 1220px) {
+  :root {
+    --container: 1090px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  :root {
+    --container: 980px;
+  }
+}
+@media screen and (max-width: 980px) {
+  :root {
+    --container: 768px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --container: 90vw;
+  }
+}

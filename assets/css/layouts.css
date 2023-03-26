@@ -1,0 +1,62 @@
+/* Padronização dos layouts do site */
+
+/* 
+  Informações:
+  "layouts.column": Uso grid + auto-rows porque reparei que algumas versões do 
+  Safari (principalmente no Iphone) o GAP não estava funcionando com o "flex-direction: column;".
+  
+  "layouts.row": Uso essa classe mesmo se tiver usando tailwind, apesar do tailwind ter a classe flex,
+  uso a "layouts.row" porque no mobile consigo definir ela como grid + auto-rows.
+
+  * Esses layouts podem ser alterados dependendo do Figma, esse arquivo é só o padrão pra um projeto novo.
+*/
+.layouts.column {
+  display: grid;
+  grid-auto-rows: min-content;
+}
+.layouts.row {
+  @apply flex;
+  display: flex;
+}
+  
+/* // Padronização dos espaçamentos */
+.s-gap {
+  grid-gap: 15px;
+  gap: 15px;
+}
+.sm-gap {
+  grid-gap: 30px;
+  gap: 30px;
+}
+.m-gap {
+  grid-gap: 50px;
+  gap: 50px;
+}
+.ml-gap {
+  grid-gap: 75px;
+  gap: 75px;
+}
+.l-gap {
+  grid-gap: 120px;
+  gap: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .layouts.row {
+    display: grid;
+    grid-auto-rows: min-content;
+  }
+  
+  .m-gap {
+    grid-gap: 40px;
+    gap: 40px;
+  }
+  .ml-gap {
+    grid-gap: 50px;
+    gap: 50px;
+  }
+  .l-gap {
+    grid-gap: 75px;
+    gap: 75px;
+  }
+}

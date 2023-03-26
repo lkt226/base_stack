@@ -1,0 +1,24 @@
+/* 
+  Informações:
+  Cares padrões do site: fica mais fácil de lembrar e de modificar se deixar elas salvas assim,
+  além de que se for trazer um modo noturno por exemplo, dessa forma fica mais fácil de resolver.
+*/
+:root {
+  --primary: #89CFF0;
+  --secondary: #F0E68C;
+  --tertiary: #F08080;
+
+  --white: #f3f3f3;
+  --black: #2e2e2e;
+}
+
+h1,h2,h3,h4, .default_button {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 22px;
+}
