@@ -1,0 +1,11 @@
+#toasts {
+  @apply items-center;
+
+  button {
+    @apply cursor-pointer;
+  }
+
+  div.flex.items-start {
+    @apply items-center;
+  }
+}
