@@ -15,6 +15,7 @@
   
 /* Padronização dos containers do site */
 .container {
+  width: 100%;
   max-width: var(--container);
   margin-left: auto;
   margin-right: auto;

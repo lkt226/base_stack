@@ -66,11 +66,16 @@ export default defineComponent({
     },
   },
   data () {
+    const config = useRuntimeConfig().public
+    const prefix = config.origin + config.url
+
     return {
-      img: {} as Image
+      img: {
+        src: prefix + this.src
+      } as Image
     }
   },
-  created () {
+  mounted () {
     /* Prefixo com location.origin pra o NuxtImg não criar um monte 
        pasta e entender como se fosse um link web, eu prefiro dessa forma. */
     const config = useRuntimeConfig().public
